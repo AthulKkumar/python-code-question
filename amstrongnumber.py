@@ -16,22 +16,22 @@
 #         for i in n:
 #             pass    
 
-def removeDuplicates(myString): 
+# def removeDuplicates(myString): 
   
-    # If length is 1 or 0 
-    if len(myString) == 0 or len(myString) == 1: 
-        return myString 
+#     # If length is 1 or 0 
+#     if len(myString) == 0 or len(myString) == 1: 
+#         return myString 
   
-    # Check for adjacent characters 
-    if myString[0] == myString[1]: 
-        # If found, remove them
-        print(myString[1:])
-        new_myString = myString[1:] 
-        return removeDuplicates(new_myString) 
+#     # Check for adjacent characters 
+#     if myString[0] == myString[1]: 
+#         # If found, remove them
+#         # print(myString[1:])
+#         new_myString = myString[1:] 
+#         return removeDuplicates(new_myString) 
   
-    # If not found, keep character and move ahead 
-    return myString[0] + removeDuplicates(myString[1:]) 
+#     # If not found, keep character and move ahead 
+#     return myString[0] + removeDuplicates(myString[1:]) 
   
-# Driver Code 
-str1 = "geeksforgeeg"
-print(removeDuplicates(str1))
+# # Driver Code 
+# str1 = "geeksforgeeg"
+# print(removeDuplicates(str1))
